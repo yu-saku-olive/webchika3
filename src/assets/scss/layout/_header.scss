@@ -1,20 +1,39 @@
 .l-header{
+   width: 100%;
+   background: $white;    
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 500;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   height: 80px;
 
+   @include sp{
+       padding: 0 20px;
+       height: 60px;
+   }
 }
 
-.l-header-inner{
-    display: flex;
-    position: relative;
-}
 
 .l-header-logo{
     img{
         width: 160px;
+        @include sp{
+            width: 38px;
+        }
     }
 }
-
-.l-header-text{
-
+.l-header-pagetitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include fz(24.18);
+    color: $black;
+    font-family: $font_acumin;
 }
 
 .drawer-icon{
@@ -43,6 +62,5 @@
     }
 }
 
-.drawer-background[
-
-]
+.drawer-background{
+}
