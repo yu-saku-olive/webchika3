@@ -34,6 +34,7 @@
     @include fz(24.18);
     color: $black;
     font-family: $font_acumin;
+    font-weight: bold;
 }
 
 
@@ -81,6 +82,7 @@
         height: 1em;
         font-size: 1.8rem;
         line-height: 1em;
+        font-weight: bold;
         // @include fz(22);
         // @include lh(1);
         font-family: $font_acumin;

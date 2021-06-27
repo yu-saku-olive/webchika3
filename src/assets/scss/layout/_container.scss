@@ -2,7 +2,7 @@
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
-    &_big{
+    &--big{
         @extend .l-container;
         max-width: 1274px;
     }

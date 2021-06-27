@@ -1,0 +1,34 @@
+.c-title{
+    font-size: 4.6rem;
+    font-weight: bold;
+    font-family: $font_acumin;
+    line-height: (64 / 46);
+    letter-spacing: 0.032em;
+    @include sp{
+        text-align: center;
+        font-size: 3.6rem;
+    }
+
+    & + *{
+        margin-top: 50px;
+        @include sp{
+            margin-top: 40px;
+        }
+    }
+    
+    & + .c-textArea{
+        margin-top: 40px;
+        @include sp{
+            margin-top: 30px;
+            margin-bottom: 52px
+        }
+    }
+}
+
+.c-title--center{
+    @extend .c-title;
+    @include pc{
+        text-align: center;
+    }
+
+}
